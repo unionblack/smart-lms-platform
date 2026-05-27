@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Урок | Smart LMS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">🎓 Smart LMS</div>
+            <ul>
+                <li><a href="index.html">Курсы</a></li>
+                <li><a href="profile.html">Профиль</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <a href="#" id="backLink" class="back-link">← Назад к курсу</a>
+        
+        <div class="lesson-content">
+            <h1 id="lessonTitle">Загрузка...</h1>
+            <div id="lessonBody"></div>
+            
+            <div class="links-audit-section">
+                <h3>🔗 Автоматическая проверка ссылок</h3>
+                <div id="linksList">Проверка...</div>
+            </div>
+            
+            <button id="completeLessonBtn" class="complete-btn">✅ Отметить как пройденное</button>
+        </div>
+    </main>
+
+    <div id="toastContainer" class="toast-container"></div>
+
+    <script src="js/gamification.js"></script>
+    <script src="js/adaptive.js"></script>
+    <script src="js/link_audit.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

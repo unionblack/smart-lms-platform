@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курс | Smart LMS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">🎓 Smart LMS</div>
+            <ul>
+                <li><a href="index.html">Курсы</a></li>
+                <li><a href="profile.html">Профиль</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="adaptive-badge" id="adaptiveBadge">
+            🧠 Адаптивный трек: <span id="adaptiveMode">стандартный</span>
+        </div>
+        
+        <h2 id="courseTitle">Загрузка...</h2>
+        <div class="lessons-list" id="lessonsList"></div>
+    </main>
+
+    <div id="toastContainer" class="toast-container"></div>
+
+    <script src="js/gamification.js"></script>
+    <script src="js/adaptive.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

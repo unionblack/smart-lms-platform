@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль | Smart LMS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">🎓 Smart LMS</div>
+            <ul>
+                <li><a href="index.html">Курсы</a></li>
+                <li><a href="profile.html" class="active">Профиль</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>👤 Личный кабинет</h1>
+        
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>🏆 Уровень</h3>
+                <div class="stat-value" id="profileLevel">1</div>
+            </div>
+            <div class="stat-card">
+                <h3>⭐ Всего XP</h3>
+                <div class="stat-value" id="profileXP">0</div>
+            </div>
+            <div class="stat-card">
+                <h3>📊 Скорость обучения</h3>
+                <div class="stat-value" id="profileSpeed">1.0x</div>
+            </div>
+        </div>
+
+        <div class="badges-section">
+            <h3>🎖️ Достижения</h3>
+            <div id="badgesList" class="badges-grid"></div>
+        </div>
+
+        <div class="courses-progress">
+            <h3>📖 Мои курсы</h3>
+            <ul id="myCoursesList"></ul>
+        </div>
+
+        <div class="progress-section">
+            <h3>📈 Общий прогресс</h3>
+            <div class="progress-bar">
+                <div id="globalProgressFill" class="progress-fill" style="width: 0%;">0%</div>
+            </div>
+        </div>
+        
+        <div class="audit-report">
+            <h3>🤖 ИИ-аудит ссылок</h3>
+            <button id="runAuditBtn" class="btn-secondary">Запустить проверку всех ссылок</button>
+            <div id="auditResults" class="audit-results"></div>
+        </div>
+    </main>
+
+    <script src="js/gamification.js"></script>
+    <script src="js/adaptive.js"></script>
+    <script src="js/link_audit.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
